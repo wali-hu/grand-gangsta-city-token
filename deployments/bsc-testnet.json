@@ -1,0 +1,42 @@
+{
+  "network": "BNB Smart Chain Testnet",
+  "chainId": 97,
+  "contractName": "GrandGangstaCity",
+  "tokenName": "Grand Gangsta City",
+  "symbol": "GGC",
+  "decimals": 18,
+  "totalSupply": "1000000000000000000000000000",
+  "contractAddress": "0x229d9a0ADEfea5A4f21477C1D83288D04b6D1a06",
+  "deploymentTransactionHash": "0x93c0eadbfe28a32d6f2d4c4f544fd87a8ea7678b9af14f2b64dd5e3bb46a088d",
+  "deploymentBlock": 129119129,
+  "deployer": "0x00b684Ca54D3174a13b28B9d08BcbbE18101e9A9",
+  "owner": "0x00b684Ca54D3174a13b28B9d08BcbbE18101e9A9",
+  "initialRecipient": "0x00b684Ca54D3174a13b28B9d08BcbbE18101e9A9",
+  "ownerBalance": "1000000000000000000000000000",
+  "gasUsed": 655274,
+  "effectiveGasPriceWei": "100000000",
+  "deploymentFeeWei": "65527400000000",
+  "solidityVersion": "0.8.24+commit.e11b9ed9",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "evmVersion": "paris",
+  "openZeppelinContractsVersion": "5.6.1",
+  "verification": {
+    "sourcify": {
+      "status": "exact_match",
+      "creationMatch": "exact_match",
+      "runtimeMatch": "exact_match",
+      "matchId": "47124298",
+      "url": "https://repo.sourcify.dev/97/0x229d9a0ADEfea5A4f21477C1D83288D04b6D1a06"
+    },
+    "bscScan": {
+      "status": "pending_api_key"
+    }
+  },
+  "explorer": {
+    "contract": "https://testnet.bscscan.com/address/0x229d9a0ADEfea5A4f21477C1D83288D04b6D1a06",
+    "transaction": "https://testnet.bscscan.com/tx/0x93c0eadbfe28a32d6f2d4c4f544fd87a8ea7678b9af14f2b64dd5e3bb46a088d"
+  }
+}
