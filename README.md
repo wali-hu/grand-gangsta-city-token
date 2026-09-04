@@ -128,3 +128,9 @@ Expected raw total supply and owner balance:
 
 This is a testnet deployment, not the mainnet token. A future mainnet deployment must have a different
 contract address and must account for any existing GGC supply on other chains before launch.
+
+## Mainnet operator handoff
+
+Mainnet is not deployed from the testnet script. An authorized deployment operator must follow the separate
+[BNB Smart Chain Mainnet deployment guide](MAINNET_DEPLOYMENT_GUIDE.md), which uses a dedicated chain-`56`
+guarded script and encrypted-keystore workflow.

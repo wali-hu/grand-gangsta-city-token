@@ -1,4 +1,7 @@
 .env
+.env.*
+!.env.example
+!.env.mainnet.example
 cache/
 out/
 broadcast/**/dry-run/
