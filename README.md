@@ -43,8 +43,12 @@ Ownership only provides OpenZeppelin's standard `owner`, `transferOwnership`, an
 
 ```text
 src/GrandGangstaCity.sol
+src/GGCVestingWallet.sol
+src/GGCVestingFactory.sol
+src/GGCTokenomics.sol
 test/GrandGangstaCity.t.sol
 script/DeployGrandGangstaCity.s.sol
+script/DeployGGCVestingTestnet.s.sol
 lib/openzeppelin-contracts/  # pinned v5.6.1
 lib/forge-std/
 broadcast/
@@ -134,3 +138,12 @@ contract address and must account for any existing GGC supply on other chains be
 Mainnet is not deployed from the testnet script. An authorized deployment operator must follow the separate
 [BNB Smart Chain Mainnet deployment guide](MAINNET_DEPLOYMENT_GUIDE.md), which uses a dedicated chain-`56`
 guarded script and encrypted-keystore workflow.
+
+## Tokenomics vesting
+
+The complete testnet vesting implementation, exact allocation table, security model, simulation command, and
+post-deployment checks are documented in the [BSC Testnet vesting runbook](VESTING_TESTNET_GUIDE.md). It integrates
+OpenZeppelin `VestingWallet`, `SafeERC20`, and `Math` while leaving the already-deployed fixed-supply token unchanged.
+
+The testnet plan deliberately uses one beneficiary for all categories. Do not reuse that beneficiary layout for
+mainnet: real category beneficiaries and the production TGE timestamp require separate written approval.
