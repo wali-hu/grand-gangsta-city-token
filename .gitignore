@@ -4,6 +4,6 @@
 !.env.mainnet.example
 cache/
 out/
-broadcast/**/dry-run/
+broadcast/
 *.swp
 *.swo

@@ -3,6 +3,30 @@
 This runbook deploys the complete GGC tokenomics plan against the already deployed BSC Testnet token. It must not be
 used on BSC Mainnet. The deployment script has an explicit chain-ID `97` guard.
 
+## Canonical BSC Testnet deployment
+
+The testnet plan was successfully deployed on 2026-09-07. Do not run the broadcast command again against this token.
+
+| Property | Value |
+| --- | --- |
+| GGC token | `0x229d9a0ADEfea5A4f21477C1D83288D04b6D1a06` |
+| Vesting factory | `0x4BA760168654bb2D186cBBC631E8Ff86427C362b` |
+| Factory transaction | `0xd1fc404f5d68bdb7427ef4653efda29d65e08944187e579c784316e1796f0ad0` |
+| Approval transaction | `0x04a1b9a94782b2d4b11769f4e37e477fabf85436b4712b96eda455a5ede69a38` |
+| Plan transaction | `0x148bcacfab7c8246a01e9dd7d914c4d0469df4f3bf9385b2447bb6558da6c06b` |
+| TGE timestamp | `1788745666` (`2026-09-07 01:47:46 UTC`) |
+| Actual gas used | `9,845,238` |
+| Actual fee | `0.0009845238 tBNB` |
+| Git commit | `b87048de736d21e0a41e0858c7011febc2c20cde` |
+| Source verification | Sourcify `exact_match` for factory and all ten wallets |
+
+Explorer links: [factory](https://testnet.bscscan.com/address/0x4BA760168654bb2D186cBBC631E8Ff86427C362b),
+[plan transaction](https://testnet.bscscan.com/tx/0x148bcacfab7c8246a01e9dd7d914c4d0469df4f3bf9385b2447bb6558da6c06b),
+and [Sourcify exact-match source](https://repo.sourcify.dev/97/0x4BA760168654bb2D186cBBC631E8Ff86427C362b).
+
+The complete machine-readable record, including every wallet, is in
+[`deployments/bsc-testnet-vesting.json`](deployments/bsc-testnet-vesting.json).
+
 ## Approved testnet interpretation
 
 - The spreadsheet's final allocation table is authoritative.
@@ -98,7 +122,10 @@ The final 2026-09-07 live-state simulation estimated `14,114,738` gas at `0.1 gw
 `0.0014114738 tBNB`. Keep at least `0.003 tBNB` available for a safe testnet buffer and re-check the estimate if
 network gas pricing changes.
 
-## 4. Broadcast only after final review
+## 4. Broadcast only after final review (historical/reproduction only)
+
+The canonical deployment above is already complete. This command is retained only as a reproducibility reference for
+a fresh test token; it must not be rerun against the deployed token.
 
 ```bash
 forge script script/DeployGGCVestingTestnet.s.sol:DeployGGCVestingTestnet \

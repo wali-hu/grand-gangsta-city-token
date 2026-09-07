@@ -53,3 +53,21 @@ acceptable.
 - Tokens sent to a vesting wallet later are treated as if present since the original TGE, per OpenZeppelin semantics.
 - Production category beneficiaries and the final TGE timestamp must be separately approved and re-tested.
 - Mainnet contract source must be explorer-verified, and all allocations must be independently reconciled on-chain.
+
+## Post-deployment verification
+
+The canonical BSC Testnet deployment at Git commit `b87048de736d21e0a41e0858c7011febc2c20cde` was independently
+checked after broadcast:
+
+- all three transaction receipts have status `1`;
+- the deployed factory runtime bytecode hash exactly matches the local compiled hash;
+- the factory and all ten vesting wallets have Sourcify `exact_match` verification;
+- every wallet has the intended category, beneficiary, TGE basis points, cliff, duration, and non-empty runtime code;
+- initial TGE releases total `83,650,000 GGC` and every wallet reports zero additionally releasable GGC;
+- ten wallet balances total `766,350,000 GGC`;
+- the beneficiary's liquid balance is `233,650,000 GGC`, including the `150,000,000 GGC` liquidity allocation;
+- the factory balance and remaining ERC-20 allowance are both zero; and
+- total supply remains exactly `1,000,000,000 GGC`.
+
+Full transaction and wallet evidence is recorded in
+[`deployments/bsc-testnet-vesting.json`](deployments/bsc-testnet-vesting.json).

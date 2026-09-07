@@ -145,5 +145,12 @@ The complete testnet vesting implementation, exact allocation table, security mo
 post-deployment checks are documented in the [BSC Testnet vesting runbook](VESTING_TESTNET_GUIDE.md). It integrates
 OpenZeppelin `VestingWallet`, `SafeERC20`, and `Math` while leaving the already-deployed fixed-supply token unchanged.
 
+The canonical BSC Testnet vesting factory is
+[`0x4BA760168654bb2D186cBBC631E8Ff86427C362b`](https://testnet.bscscan.com/address/0x4BA760168654bb2D186cBBC631E8Ff86427C362b).
+Its atomic plan transaction is
+[`0x148bcacfab7c8246a01e9dd7d914c4d0469df4f3bf9385b2447bb6558da6c06b`](https://testnet.bscscan.com/tx/0x148bcacfab7c8246a01e9dd7d914c4d0469df4f3bf9385b2447bb6558da6c06b).
+Factory and all ten wallets have Sourcify `exact_match` source verification. See the
+[machine-readable deployment record](deployments/bsc-testnet-vesting.json) for every wallet and reconciled balance.
+
 The testnet plan deliberately uses one beneficiary for all categories. Do not reuse that beneficiary layout for
 mainnet: real category beneficiaries and the production TGE timestamp require separate written approval.

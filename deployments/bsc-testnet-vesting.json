@@ -1,0 +1,164 @@
+{
+  "network": "BNB Smart Chain Testnet",
+  "chainId": 97,
+  "gitCommit": "b87048de736d21e0a41e0858c7011febc2c20cde",
+  "token": "0x229d9a0ADEfea5A4f21477C1D83288D04b6D1a06",
+  "funder": "0x00b684Ca54D3174a13b28B9d08BcbbE18101e9A9",
+  "testnetBeneficiary": "0x00b684Ca54D3174a13b28B9d08BcbbE18101e9A9",
+  "tgeTimestamp": 1788745666,
+  "tgeUtc": "2026-09-07T01:47:46Z",
+  "planBlockTimestamp": 1788745708,
+  "factory": {
+    "address": "0x4BA760168654bb2D186cBBC631E8Ff86427C362b",
+    "transactionHash": "0xd1fc404f5d68bdb7427ef4653efda29d65e08944187e579c784316e1796f0ad0",
+    "blockNumber": 129553744,
+    "gasUsed": 1695136,
+    "gasPriceWei": 100000000,
+    "feeBNB": "0.0001695136",
+    "runtimeCodeBytes": 7638,
+    "runtimeBytecodeHash": "0x99489795999c95eac686ae756b495702cce39edb736f6649377aa9a6666931dc",
+    "sourcifyVerification": "exact_match"
+  },
+  "approval": {
+    "transactionHash": "0x04a1b9a94782b2d4b11769f4e37e477fabf85436b4712b96eda455a5ede69a38",
+    "blockNumber": 129553753,
+    "approvedRaw": "1000000000000000000000000000",
+    "gasUsed": 46407,
+    "gasPriceWei": 100000000,
+    "feeBNB": "0.0000046407",
+    "remainingAllowanceRaw": "0"
+  },
+  "plan": {
+    "transactionHash": "0x148bcacfab7c8246a01e9dd7d914c4d0469df4f3bf9385b2447bb6558da6c06b",
+    "blockNumber": 129553761,
+    "gasUsed": 8103695,
+    "gasPriceWei": 100000000,
+    "feeBNB": "0.0008103695"
+  },
+  "totalGasUsed": 9845238,
+  "totalFeeBNB": "0.0009845238",
+  "totals": {
+    "supplyGGC": "1000000000",
+    "supplyRaw": "1000000000000000000000000000",
+    "liquidityGGC": "150000000",
+    "vestingAllocationGGC": "850000000",
+    "vestingTgeReleasedGGC": "83650000",
+    "totalLiquidAtTgeGGC": "233650000",
+    "totalLiquidAtTgeRaw": "233650000000000000000000000",
+    "totalLockedAfterTgeGGC": "766350000",
+    "totalLockedAfterTgeRaw": "766350000000000000000000000",
+    "factoryBalanceRaw": "0"
+  },
+  "wallets": [
+    {
+      "category": "SEED",
+      "address": "0xD54ba6a454D4dB31b7D296fCC023C5c757ab32a9",
+      "allocationGGC": "160000000",
+      "tgeBps": 1000,
+      "tgeReleasedGGC": "16000000",
+      "lockedAfterTgeGGC": "144000000",
+      "cliffMonths": 3,
+      "vestingMonths": 12,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "PRIVATE",
+      "address": "0x7A09C601327a0B1b98DF4c8b160CA7474Fe6f4e7",
+      "allocationGGC": "50000000",
+      "tgeBps": 1500,
+      "tgeReleasedGGC": "7500000",
+      "lockedAfterTgeGGC": "42500000",
+      "cliffMonths": 3,
+      "vestingMonths": 12,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "PUBLIC",
+      "address": "0x4795fA1fa07d056E854296a126714b6BFEf34F3b",
+      "allocationGGC": "130000000",
+      "tgeBps": 4000,
+      "tgeReleasedGGC": "52000000",
+      "lockedAfterTgeGGC": "78000000",
+      "cliffMonths": 1,
+      "vestingMonths": 4,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "TEAM",
+      "address": "0x82b9b7002D89C7373DCAF9FEE697E80B9e566feA",
+      "allocationGGC": "100000000",
+      "tgeBps": 0,
+      "tgeReleasedGGC": "0",
+      "lockedAfterTgeGGC": "100000000",
+      "cliffMonths": 6,
+      "vestingMonths": 36,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "ADVISORS",
+      "address": "0x4f1AcebcE735B62c0311064484610759c1E8Aaae",
+      "allocationGGC": "60000000",
+      "tgeBps": 500,
+      "tgeReleasedGGC": "3000000",
+      "lockedAfterTgeGGC": "57000000",
+      "cliffMonths": 4,
+      "vestingMonths": 24,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "MARKETING",
+      "address": "0x266e3F80D90079913DeD2cC96AEd751B288ED5A9",
+      "allocationGGC": "100000000",
+      "tgeBps": 300,
+      "tgeReleasedGGC": "3000000",
+      "lockedAfterTgeGGC": "97000000",
+      "cliffMonths": 3,
+      "vestingMonths": 48,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "AIRDROP",
+      "address": "0x3358c479F6785d303e383bf49202c9a360c09673",
+      "allocationGGC": "20000000",
+      "tgeBps": 1000,
+      "tgeReleasedGGC": "2000000",
+      "lockedAfterTgeGGC": "18000000",
+      "cliffMonths": 0,
+      "vestingMonths": 5,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "RESERVE",
+      "address": "0x14AB11eEdbcd6a9EF9834E7E3875b8d20d471120",
+      "allocationGGC": "30000000",
+      "tgeBps": 0,
+      "tgeReleasedGGC": "0",
+      "lockedAfterTgeGGC": "30000000",
+      "cliffMonths": 8,
+      "vestingMonths": 64,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "REWARDS",
+      "address": "0xf46C9a0974a8024Beb07d6Fc872F928857087359",
+      "allocationGGC": "150000000",
+      "tgeBps": 10,
+      "tgeReleasedGGC": "150000",
+      "lockedAfterTgeGGC": "149850000",
+      "cliffMonths": 0,
+      "vestingMonths": 72,
+      "sourcifyVerification": "exact_match"
+    },
+    {
+      "category": "DEVELOPMENT",
+      "address": "0xbA36A069B52bc7B86a6e0d8a54eb8C4847578A53",
+      "allocationGGC": "50000000",
+      "tgeBps": 0,
+      "tgeReleasedGGC": "0",
+      "lockedAfterTgeGGC": "50000000",
+      "cliffMonths": 3,
+      "vestingMonths": 36,
+      "sourcifyVerification": "exact_match"
+    }
+  ]
+}
