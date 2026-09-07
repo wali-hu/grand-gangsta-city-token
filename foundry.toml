@@ -6,6 +6,8 @@ solc = "0.8.24"
 evm_version = "paris"
 optimizer = true
 optimizer_runs = 200
+# vm.setEnv mutates process-level environment variables, so script tests must not run concurrently.
+threads = 1
 
 [rpc_endpoints]
 bsc_testnet = "${BSC_TESTNET_RPC_URL}"
